@@ -1,0 +1,23 @@
+<div class="indexTitle">
+
+    <div class="goBack">
+        <a [routerLink]="['/']">
+          <h4>
+            HOME
+          </h4>
+          </a>
+      </div>
+  <ul>
+      <h1 class="indexTitle">Species</h1>
+    <li *ngFor="let specie of species;">
+      <a [routerLink]="['/species', specie.id]">
+        <div class="list">
+        {{specie.name}}
+        
+        </div>
+      </a> 
+    </li>
+  </ul>
+  
+  <button class="btn btn-primary" (click)="getSpecies()" *ngIf="species">Load page</button>
+</div>

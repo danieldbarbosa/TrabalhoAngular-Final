@@ -1,0 +1,25 @@
+
+<div class="indexTitle">
+
+    <div class="goBack">
+        <a [routerLink]="['/']">
+          <h4>
+            HOME
+          </h4>
+          </a>
+      </div>
+      <h1 class="indexTitle">People</h1>
+<div *ngIf="people.length==0">Loading</div>
+<ul>
+  <li *ngFor="let person of people;">
+    <a [routerLink]="['/people', person.id]">
+      <div class="list">
+      {{person.name}}
+      </div>
+    </a> 
+  </li>
+</ul>
+
+
+<button class="btn btn-primary" (click)="getPeople()" *ngIf="people">Load page</button>
+</div>

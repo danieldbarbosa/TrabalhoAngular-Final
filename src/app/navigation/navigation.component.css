@@ -1,0 +1,66 @@
+img{
+    max-width: 400px
+}
+
+.nav > a{
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+.nav img{
+    margin: auto
+}
+
+@keyframes toOpacity {
+    from {opacity: 1}
+    to {opacity: 0.2;}
+}
+
+@keyframes label{
+    from{bottom: 0; opacity:0}
+    to{bottom: 30%; opacity: 1;}
+}
+
+.nav > a:hover{
+    animation-name: toOpacity;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    cursor:pointer
+}
+
+.nav div{
+    background-size: cover;
+    /* transform: skew(-20deg); */
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    width: 200px; 
+    
+    border-radius: 5% 5% 5% 5% ;
+    
+    position: relative;
+}
+
+
+.nav label{
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    left: 0;
+    color: white;
+
+}
+.nav > a:hover label{
+    animation-name: label;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards; 
+    
+}
+
+.nav label{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    
+}

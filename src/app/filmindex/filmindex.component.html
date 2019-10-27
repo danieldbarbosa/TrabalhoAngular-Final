@@ -1,0 +1,22 @@
+<div class="indexTitle">
+
+  <div class="goBack">
+    <a [routerLink]="['/']">
+      <h4>
+        HOME
+      </h4>
+      </a>
+  </div>
+  <h1 class="indexTitle">Films</h1>
+  <ul>
+      <li *ngFor="let film of films;">
+        <a [routerLink]="['/films', film.id]">
+          <div class="list">
+            {{film.title}}
+          </div>
+          </a> 
+      </li>
+  </ul>
+
+  <button class="btn btn-primary" (click)="getFilms()" *ngIf="films">Load page</button>
+</div>

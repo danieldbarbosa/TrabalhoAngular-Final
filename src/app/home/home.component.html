@@ -1,0 +1,41 @@
+<!-- <div>
+  <ol>
+    <li>
+      <a [routerLink]="['/people']">People</a>
+    </li>
+    <li>
+       <a [routerLink]="['/vehicles']"> Vehicles</a>
+    </li>
+      <li>
+       <a [routerLink]="['/planets']"> Planets</a>
+    </li>
+       <li>
+       <a [routerLink]="['/species']"> Species</a>
+    </li>
+       <li>
+       <a [routerLink]="['/starships']"> Starships</a>
+    </li>
+        <li>
+       <a [routerLink]="['/films']"> Films</a>
+    </li>
+  </ol>
+
+
+</div> -->
+
+<div class="mt-5 text-center">
+
+    <h1 >Bem vindo ao navegador STAR WARS</h1>
+    <h4>
+        Prepara-te para uma viagem intergalatica!
+    </h4>
+    </div>
+    <div class="container-fluid">
+    <div class="row" style="padding: 100px;">
+        <app-navigation  class="col-md-12 "  [src]="'..//..//assets//people.jpg'" [label]="'people'" ></app-navigation>
+        <app-navigation  class="col-md-12 " [src]="'..//..//assets//movie.jpg'" [label]="'films'" ></app-navigation>
+        <app-navigation  class="col-md-12 " [src]="'..//..//assets//starship.jpeg'" [label]="'starships'" ></app-navigation>
+        <app-navigation  class="col-md-12 mt-4" [src]="'..//..//assets//vehicles.jpg'" [label]="'vehicles'" ></app-navigation>
+        <app-navigation  class="col-md-12 mt-4" [src]="'..//..//assets//species.jpg'" [label]="'species'" ></app-navigation>
+        <app-navigation  class="col-md-12 mt-4" [src]="'..//..//assets//planets.jpg'" [label]="'planets'" ></app-navigation>
+</div>
